@@ -4,6 +4,7 @@
 Welcome to Level 1! Here we are going to take a deep dive into some super cool and crutial git commands and annoyingly put our answers in individual files. We will also be getting our hands dirty with some git stuff. You may not need all of these commands for this class per say, but you will be using most of these in your daily life out in the wild and a lot of them will help your workflow in this class as well. Make sure to put any files you create in the `src` folder provided for you. You will be creating a lot of files in this part. We suggest you use `vim [filename]` or `nano [filename]` to do this. Have fun!
 
 1. Type `git add`
+   - You should see a message that says something like 'Nothing specified, nothing added.'
    - If you want to stage all modified files what do you put after add? Put the entire command `git add [symbol]` in a file called `stage.txt`
    - If you don't put the symbol above, you can simply list out all the files you want to stage for commit. But what exactly does staging mean? That means you are preparing for it to be sent, you aren't actually sending it anywhere, you are just preparing it, marking the file stating that you are done modifying it. To actually wrap up all the files you have staged, you must then do `git commit -m [message]`, and finally `git push` to get it onto your remote repository (github). Now that you understand the three basic commands, lets dive deeper into other commands you will encounter and a little more detail on the above ones. 
 2. Type `git help`
@@ -15,10 +16,15 @@ Welcome to Level 1! Here we are going to take a deep dive into some super cool a
    - a. What is the name of the formatting argument that will allow you to format the output of the git log command. Hint: look under `Commit Formatting`
      - Put your answer in a file titled `log_format.txt`, do not include the `--` just put the name of the command on the first line. 
    - b. On a new line, put the full command needed to display each element in the log in oneline. 
-   - Hence, your final `log_format.txt` file should look like:
+   - Hence, your final `log_format.txt` file should look like one of the following:
    ***
    `[answer to a]`  
-   `[git log --[answer to a][command specifying one line]]`   
+   `[git log --[answer to a]=[command specifying one line]]`   
+   ***
+   OR 
+   ***
+   `[answer to a]`  
+   `[git log --[command specifying one line]]`   
    ***
 5. Type `git remote`
    - This outputs the name of the repository on github that your local repo is connected to. While helpful, we really want the url address of that repo that your local folder is connected to when you cloned the repo. Use the `git help remote` menu to figure out how to get git to display both the name and the link associated with that name. 
@@ -54,7 +60,7 @@ Welcome to Level 1! Here we are going to take a deep dive into some super cool a
 To check if your answers are correct run the `check_results.py` file in the `validate` folder. If you are in the `src` folder, run `python ../validate/check_results.py`. 
 
 ## Submission
-Now that you have verified that your answers are correct, lets actually get all of this up on github so you can refer to this yourself later. You should NOT push to the existing repo that you cloned from because everyone doing this project shares that repo. Treat that repo as the skeleton, something that you never push to. So we would have to create our own personal repositories and add that as a remote repository onto our local repo. So lets do the following:  
+Now that you have verified that your answers are correct, lets actually get all of this up on github so you can refer to this yourself later. You should NOT push to the existing repo that you cloned from because everyone doing this project shares that repo (you should not be able to anyways since you should not have collaborator privileges). Treat that repo as the skeleton, something that you can never push to. So we would have to create our own personal repositories and add that as a remote repository onto our local repo. So lets do the following:  
   1. Go to github and click the plus sign on the top right near your profile. Click `New Repository`. You should now see this menu:  ![Create New Repo](assets/new_repo.png)
   2. In the above menu, name the repository: `[your_first_name]_gitworkshop` and set it to `Private`, leave the checkboxes unselected and hit create. 
   3. Now we have to use `git` to connect this `remote` repository to our local one. What command do you think we need to use to do this? Use that command to `add` this empty repo you just made to your local folder. Name the remote repo `[your_first_name]` and to get the `url_link` of this repo click the code dropdown. 
