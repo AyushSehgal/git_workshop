@@ -7,6 +7,11 @@ The way this works is each branch indicates a different level (there are two of 
 To begin, clone this repo by going to any local folder on your computer and typing `git clone https://github.com/AyushSehgal/git_workshop.git`  
 CD into this folder, then start by going to the branch titled `level1` and to do this locally do: `git checkout level1`, then read the readme document and begin when ready! 
 
+## Resources
+- [Presentation](https://docs.google.com/presentation/d/1-A4GeQGOzPpgmvIAx16ddPQ5KMa7aRFuTKgjQyc1eiM/edit?usp=sharing) (with clarifications)
+- [Solutions](https://docs.google.com/document/d/1ELUV6vYqKgJ-CqfDE6X0T9UA9utMXBWsHBfP8NCEJtA/edit)
+- [Walkthrough Video](https://drive.google.com/file/d/1V6O1ylQsU7OjU77Jg39_kUsl9rgrsHH-/view?usp=sharing)
+
 ## Disclaimer
 This project was developed by Computer Science Mentors (CSM) at Berkeley to support students taking CS61B. This project is not a precursor to course project Gitlet and is not related to that project but is merely a way for students to get more comfortable with git, which can indirectly help with projects relating to it. 
 
